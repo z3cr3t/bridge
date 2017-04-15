@@ -1,6 +1,6 @@
 <network>
-  <name>default</name>
-  <bridge name="virbr0"/>
+  <name>br1</name>
+  <bridge name="br1"/>
   <forward/>
   <ip address="100.100.1.1" netmask="255.255.255.0">
   </ip>
