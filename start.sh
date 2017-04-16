@@ -42,4 +42,4 @@ iptables -t nat -I PREROUTING -p tcp -d 62.210.169.61 --dport 2210 -j DNAT --to-
 iptables -t nat -I PREROUTING -p udp -d 62.210.169.61 --dport 2210 -j DNAT --to-destination 100.100.1.10:22 &&
 iptables -t nat -I PREROUTING -p tcp -d 62.210.169.61 --dport 2211 -j DNAT --to-destination 100.100.1.11:22 &&
 iptables -t nat -I PREROUTING -p udp -d 62.210.169.61 --dport 2211 -j DNAT --to-destination 100.100.1.11:22 &&
-iptables -I FORWARD -m state -d 100.100.1.1/24 --state NEW,RELATED,ESTABLISHED -j ACCEPT &&
+iptables -I FORWARD -m state -d 100.100.1.1/24 --state NEW,RELATED,ESTABLISHED -j ACCEPT
